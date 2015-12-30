@@ -45,28 +45,27 @@ void glosik(zwierze *k) {
 
 int main()
 {
-	
+	{
+
 		pies *pimpek = new pies;
 		kot *punia = new kot;
 
-		zwierze *zwierzak;
+		zwierze *zwierzak = new zwierze;
+		glosik(zwierzak);
+		delete zwierzak;
 
 		zwierzak = punia;
 		glosik(zwierzak);
+		delete punia;
 
 		zwierzak = pimpek;
 		glosik(zwierzak);
-
-		delete punia;
 		delete pimpek;
-		delete zwierzak;
 
 
 
 
-
-
-
+	}
 
 
 
